@@ -1,0 +1,2 @@
+export const SHOW_BLOG_POST = "SHOW_BLOG_POST"
+export const UPDATE_LIKES = "UPDATA_LIKES"

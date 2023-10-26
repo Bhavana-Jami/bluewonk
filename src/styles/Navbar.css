@@ -1,0 +1,51 @@
+.navbar-brand {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.navbar-brand span {
+    font-family: 'Dela Gothic One', cursive !important;
+    text-shadow: none;
+    background: linear-gradient(150deg, rgba(17, 152, 237), rgba(17, 152, 237), whitesmoke, rgba(17, 152, 237));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 6ex auto;
+    animation: gradientText 2s ease-in-out infinite alternate;
+}
+
+.offcanvas.offcanvas-end {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 8, 8.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0 6ex;
+    }
+
+    18% {
+        background-position: 50% 100%;
+    }
+}
+
+/* Media queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .nav-item a {
+        font-weight: 800;
+        color: hsla(236, 100%, 8%, 1) !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

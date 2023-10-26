@@ -1,0 +1,11 @@
+.read-post-container{
+    height: 100vh !important;
+}
+.formatted-text{
+    white-space: pre-line;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}

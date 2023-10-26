@@ -1,0 +1,9 @@
+.hero-container{
+    min-height: 100%;
+    width: 100% !important;
+    /* background: hsla(236, 100%, 8%, 1); */
+    background: linear-gradient(black,
+            hsla(236, 100%, 8%, 1),
+            hsla(211, 100%, 28%, 1)) !important;
+    background-attachment: fixed;
+}
