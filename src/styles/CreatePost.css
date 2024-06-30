@@ -1,0 +1,18 @@
+.create-post-container {
+  background-color: black;
+  color: rgb(216, 232, 232) !important;
+}
+.css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {
+  color: rgb(216, 232, 232) !important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgb(216, 232, 232) !important;
+}
+
+.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input:focus {
+    /* border-color: rgb(26, 164, 164) !important; */
+
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: rgb(216, 232, 232) !important;
+}

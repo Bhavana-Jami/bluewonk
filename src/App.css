@@ -1,14 +1,166 @@
+#hero-container {
+  min-height: 60vh !important;
+  background-image: url("D:\Study\Front-End\bluewonk\src\assets\background.png"); /* Adjusted path */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 100%;
+  color: rgb(216, 232, 232) !important;
+}
+
+.css-1yuhms1-MuiTypography-root,
+.css-mwtj28-MuiTypography-root,
+.css-1ohj6iu,
+.css-1m07ler-MuiTypography-root,
+.css-zsyj8p-MuiTypography-root {
+  color: rgb(216, 232, 232) !important;
+}
+
+.css-mwtj28-MuiTypography-root {
+  margin-top: -3rem !important;
+}
+
+.css-1m07ler-MuiTypography-root {
+  text-align: center !important;
+  margin-top: 1.5rem;
+}
+
+#hero-child {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  height: 100%;
+  width: 100%;
+}
+
 * {
-    color: whitesmoke !important;
-    /* font-family: 'Poppins', sans-serif; */
-    font-family: -apple-system,Nunito,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+  font-family: "Poppins", sans-serif !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* color: #05014A !important; */
 }
 
 body {
-    /* min-height: 100%;
-   
-    background: linear-gradient(black,
-            hsla(236, 100%, 8%, 1),
-            hsla(211, 100%, 28%, 1)) !important;
-    background-attachment: fixed; */
+  /* color: #05014A !important; */
+}
+#main_container {
+  color: #05014A !important;
+}
+
+.App {
+  height: 100vh !important;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }

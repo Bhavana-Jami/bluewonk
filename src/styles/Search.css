@@ -1,28 +1,22 @@
-.wrapper {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.form-control {
+    width: 60%;
+    border-radius: 2rem;
+    border-left: none;
 }
 
-.search-container {
-    /* height: 100vh;
-    width: 100%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    position: absolute;
-    top: 50%;
-    left: 58%;
+.form-control:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none;
 }
 
-.search-container input {
-    outline: none;
-    height: 3rem;
-    width: 8rem;
-    padding: 1rem;
-    border-radius: 10%;
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: white;
+}
+
+.input-group-text {
+    background-color: none;
+    border: none;
 }

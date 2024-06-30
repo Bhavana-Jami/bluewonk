@@ -1,38 +1,63 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Provider } from 'react-redux';
-import store from './redux/store';
-import Pagination from './components/Pagination';
-import Home from './components/Home';
-import Navbar from './components/BlogNavbar';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Posts from './components/Posts'; // Corrected the import statement
-import { Container, Nav, Row } from 'react-bootstrap';
-import BlogNavbar from './components/BlogNavbar';
-import ReadPost from './components/ReadPost';
-import Hero from './components/Hero';
+import { Provider, useSelector } from "react-redux";
+import store from "./redux/store";
+import { YouTube } from "@mui/icons-material";
+import { Box, Github, Instagram, Linkedin } from "react-bootstrap-icons";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Tech from "./components/Tech";
+import Love from "./components/Love";
+import Spiritual from "./components/Spiritual";
+import Travel from "./components/Travel";
+import Home from "./components/Home";
+import ReadPost from "./components/ReadPost";
+import CreatePost from "./components/CreatePost";
+import BlogNavbar from "./components/BlogNavbar";
+import ProtectedRoutes from "./components/ProtectedRoutes";
+import Footer from "./components/Footer";
+import { useEffect, useState } from "react";
+import FooterComponent from "./components/FooterComponent";
+import SixtySquares from "./components/SixtySquares";
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-  integrity="sha384-9ndCyUaIbzA12FUVX310CJmCapSm07SnpJef8486qhLnuZ2cdeRh0821uK6FUUV!"
+  integrity="sha384-9ndCyUaIbzA12FUVXJi0CjmCapSm075np3ef0486qhLnuZ2cdeRh0021uK6FUUVM"
   crossorigin="anonymous"
 />
 
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const storedUser = JSON.parse(localStorage.getItem("currentuser"));
+    if (storedUser) {
+      setUser(storedUser);
+    }
+  }, []);
   return (
-    <div className="App">
+    // <SixtySquares/>
+    <div>
       <Provider store={store}>
         <BrowserRouter>
-          {/* <BlogNavbar /> */}
-          <Hero/>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/posts" element={<Posts />} />
-            <Route path="/navbar" element={<Navbar />} />
+            <Route element={<ProtectedRoutes />}>
+              <Route path="/createpost" element={<CreatePost />} />
+            </Route>
+            <Route path="/createpost/:postId" element={<CreatePost />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/tech" element={<Tech />} />
+            <Route path="/posts/:postId" element={<ReadPost />} />
+            <Route path="/spiritual" element={<Spiritual />} />
+            <Route path="/travel" element={<Travel />} />
+            <Route path="/love" element={<Love />} />
+            <Route path="/readpost" element={<ReadPost />} />
           </Routes>
         </BrowserRouter>
+
       </Provider>
+      <FooterComponent />
+      
     </div>
   );
 }

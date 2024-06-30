@@ -1,9 +1,36 @@
-.hero-container{
-    min-height: 100%;
-    width: 100% !important;
-    /* background: hsla(236, 100%, 8%, 1); */
-    background: linear-gradient(black,
-            hsla(236, 100%, 8%, 1),
-            hsla(211, 100%, 28%, 1)) !important;
-    background-attachment: fixed;
+#hero-container {
+  min-height: 60vh !important;
+  background-image: url("D:\Study\Front-End\bluewonk\src\assets\background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  max-width: 100%;
+  color: rgb(216, 232, 232) !important;
+}
+.css-1yuhms1-MuiTypography-root{
+  color: rgb(216, 232, 232) !important;
+
+}
+.css-mwtj28-MuiTypography-root {
+  margin-top: -3rem !important;
+  color: rgb(216, 232, 232) !important;
+}
+.css-1ohj6iu {
+  color: rgb(216, 232, 232) !important;
+}
+.css-mwtj28-MuiTypography-root {
+  color: rgb(216, 232, 232) !important;
+}
+.css-1m07ler-MuiTypography-root {
+  color: rgb(216, 232, 232) !important;
+}
+.css-zsyj8p-MuiTypography-root {
+  color: rgb(216, 232, 232) !important;
+}
+.css-1m07ler-MuiTypography-root {
+  text-align: center !important;
+  margin-top: 1.5rem;
+  margin-top: -5rem !important;
 }

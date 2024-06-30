@@ -1,0 +1,35 @@
+#card-image{
+  height: 30vh;
+  width: 100%;
+  background-image: url("D:\Study\Front-End\bluewonk\src\assets\img3.jpg");
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  color: rgb(216, 232, 232) !important;
+  cursor: pointer;
+}
+
+#card-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.75);
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+#card-footer {
+  width: 22rem !important;
+  margin-top: -4% !important;
+  color: black !important;
+  margin-bottom: 10%;
+}
+.css-s4qgk3-MuiPaper-root-MuiCard-root{
+  border-bottom:  1px solid grey !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}

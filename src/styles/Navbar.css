@@ -1,51 +1,80 @@
+:root {
+  --hs-btn-close-color: #fff !important;
+}
+#navbar {
+  height: 10vh !important;
+  width: 100% !important;
+
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  color: rgb(216, 232, 232) !important;
+  padding: 0.3rem 0.5rem !important;
+}
+.navbar-expand-md .navbar-nav .nav-link:hover {
+  background-color: #000323;
+  color: white !important;
+  border-radius: 7%;
+}
+.navbar-expand-md .navbar-nav .nav-link.active {
+  background-color: #000323;
+  color: white !important;
+  border-radius: 7%;
+}
 .navbar-brand {
-    font-weight: bolder;
-    font-size: xx-large;
+  color: rgb(216, 232, 232) !important;
+  font-weight: bolder !important;
 }
-
-.navbar-brand span {
-    font-family: 'Dela Gothic One', cursive !important;
-    text-shadow: none;
-    background: linear-gradient(150deg, rgba(17, 152, 237), rgba(17, 152, 237), whitesmoke, rgba(17, 152, 237));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 6ex auto;
-    animation: gradientText 2s ease-in-out infinite alternate;
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
-
-.offcanvas.offcanvas-end {
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 4px 30px rgba(0, 0, 8, 8.4);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+.offcanvas-title {
+  margin-left: 8px;
+  font-weight: bold;
 }
-
-@keyframes gradientText {
-    0% {
-        background-position: 0 6ex;
-    }
-
-    18% {
-        background-position: 50% 100%;
-    }
+.offcanvas-header .btn-close,
+.offcanvas-header .btn-close:focus,
+.offcanvas-header .btn-close:focus-visible,
+.offcanvas-header .btn-close.active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.navbar-toggler {
+  color: rgb(216, 232, 232) !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /* Media queries */
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (max-width: 768px) {
+  #right-nav {
+    align-items: center !important;
+    justify-content: start !important;
+    flex-direction: row !important;
+    margin-top: 1.1rem !important;
+    margin-left: 0.5rem !important;
+  }
+  .offcanvas {
+    backdrop-filter: blur(25px) saturate(39%);
+    -webkit-backdrop-filter: blur(25px) saturate(39%);
+    background-color: rgba(255, 255, 255, 0.23);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    color: rgb(216, 232, 232) !important;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    .nav-item a {
-        font-weight: 800;
-        color: hsla(236, 100%, 8%, 1) !important;
-    }
+@media only screen and (min-width: 600px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 992px) {
+}

@@ -1,19 +1,4 @@
-.row {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-}
-
-.container {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-}
-
-.home-grid {
-    padding: 4% 10% 4% 10%;
-    /* justify-content: center !important; align-items: center !important; */
-}
-
-/* Scrollbar width */
-::-webkit-scrollbar {
-    width: 0px;
+#hero-container{
+    /* margin-top: -2rem !important; */
+    width: 100% !important;
 }
