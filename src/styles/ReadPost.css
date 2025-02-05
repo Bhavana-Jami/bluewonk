@@ -1,8 +1,8 @@
 #blog-hero-section {
   height: 50vh !important;
   width: 100% !important;
-  background-color: aqua;
-  background-image: url("D:\Study\Front-End\bluewonk\src\assets\img4.jpg");
+  /* background-color: aqua; */
+  /* background-image: url("D:\Study\Front-End\bluewonk\src\assets\img4.jpg"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

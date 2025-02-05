@@ -1,13 +1,4 @@
-#hero-container {
-  min-height: 60vh !important;
-  background-image: url("D:\Study\Front-End\bluewonk\src\assets\background.png"); /* Adjusted path */
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  max-width: 100%;
-  color: rgb(216, 232, 232) !important;
-}
+
 
 .css-1yuhms1-MuiTypography-root,
 .css-mwtj28-MuiTypography-root,
@@ -26,12 +17,6 @@
   margin-top: 1.5rem;
 }
 
-#hero-child {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  height: 100%;
-  width: 100%;
-}
 
 * {
   font-family: "Poppins", sans-serif !important;
@@ -43,14 +28,14 @@
 
 body {
   /* color: #05014A !important; */
-}
-#main_container {
-  color: #05014A !important;
+  /* background-image: radial-gradient( circle 710px at 5.2% 7.2%,  rgba(37,89,222,1) 0%, rgba(37,89,222,1) 7.5%, rgba(4,4,29,1) 44.7% ) !important; */
+
 }
 
 .App {
   height: 100vh !important;
   width: 100%;
+
 }
 
 ::-webkit-scrollbar {

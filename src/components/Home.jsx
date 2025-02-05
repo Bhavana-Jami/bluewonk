@@ -6,6 +6,9 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { initiateDeletingBlog } from "../redux/posts/postsActions";
 // import { useState } from "react";
+import TabsNav from "./TabsNav";
+import Footer from "./Footer";
+import { Tabs } from "react-bootstrap";
 function Home() {
   const dispatch = useDispatch();
 
@@ -15,18 +18,14 @@ function Home() {
     }
   }, []);
   const blogPosts = useSelector((state) => state.posts.blogPosts);
-  
+
   return (
     <div id="home">
-      <Hero
-        title="Hey there, hear my mind!"
+      <Hero />
 
-        subtitle="Duh duh dahh blahh ah hahhhha blahh ah hahhhha yum"
-        flag={true}
-        heroBackgroundColor={"#B2FFFF"}
-      />
-      
+      <TabsNav/>
       <Main blogPosts={blogPosts} />
+      <Footer/>
     </div>
   );
 }

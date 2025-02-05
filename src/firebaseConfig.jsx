@@ -4,14 +4,15 @@ import "firebase/firestore";
 import { getFirestore, serverTimestamp } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAh01jkRQKNlGZG2dL1cIHmFved7ZZa4R4",
-  authDomain: "bluewonk-94503.firebaseapp.com",
-  projectId: "bluewonk-94503",
-  storageBucket: "bluewonk-94503.appspot.com",
-  messagingSenderId: "88036855816",
-  appId: "1:88036855816:web:a41047c094c4475d2b81bd",
-  measurementId: "G-YT4TVS3MEK",
-};
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY, //+
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN, //+
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID, //+
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET, //+
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID, //+
+  appId: process.env.REACT_APP_FIREBASE_APP_ID, //+
+}; //+
+//+
+export default firebaseConfig; //+/ {"source":"chat"}
 
 const app = firebase.initializeApp(firebaseConfig);
 const db = getFirestore(app);
